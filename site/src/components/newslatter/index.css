@@ -38,11 +38,9 @@ button,input {
     width: 6rem;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    flex-wrap: wrap;
 }
 
 #inputEmail {
-    flex-wrap: wrap;
     cursor: text;
     background-color: #EFB8F0;
     color: 34095F;
