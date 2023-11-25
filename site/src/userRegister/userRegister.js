@@ -1,5 +1,3 @@
-import newsletter from "../src/components/newslatter";
-
 const root_container = document.querySelector("#root");
 
 function Header() {
