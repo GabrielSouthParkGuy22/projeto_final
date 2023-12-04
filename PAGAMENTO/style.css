@@ -15,17 +15,18 @@ body {
   
 }
 
-.topo {
+.container, h3 {
   
   background-color: black;
   height: 100px;
   display: flex;
-  column-gap: 1500px;
+  column-gap: 1700px;
   color: white;
- 
+  align-items: center;
   
-
 }
+
+
 
 
 
