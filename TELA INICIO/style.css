@@ -34,10 +34,12 @@ body {
 .pesquisa {
   
   margin-right: -200px;
-  
+  display: flex;
   
   
 }
+
+
 
 bandas, #banda1, #banda2, #banda3 {
   
@@ -46,8 +48,6 @@ bandas, #banda1, #banda2, #banda3 {
   font-size: 40px;
   line-height: 80px;
   align-items: center;
-  
-  
   
 }
 
