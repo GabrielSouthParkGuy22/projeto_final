@@ -1,5 +1,5 @@
-import { Footer, Header, RegisterHeader, UserForm } from "./userRegister";
-
+import { Footer, RegisterHeader, UserForm } from "./userRegister";
+import Header from '../components/header/header.js'
 import './userRegister.css'
 
 
