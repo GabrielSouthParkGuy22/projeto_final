@@ -6,12 +6,10 @@ import './userRegister.css'
 export default function userRegister() {
     return (
         <main>
-
         <Header />
         <RegisterHeader />
         <UserForm />
         <Footer />
-
         </main>
     )
 }

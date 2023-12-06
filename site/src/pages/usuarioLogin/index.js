@@ -2,6 +2,7 @@ import './index.css'
 import '../../index.css'
 import { useState } from 'react'
 import Rodape from '../../components/rodape'
+import Header from '../../components/header/header.js'
 
 export default function PageCadastro() {
     const [email, setEmail] = useState('')
@@ -30,12 +31,12 @@ export default function PageCadastro() {
 
     return (
         <main classname="pageUserRegister">
-            // HeaderComponente
+            <Header/>
             <div className="lineLogin"><h1>Login</h1></div>
 
             <div className="page">
                 <div className="containerLogin">
-                    <div className="lineText"><h1>Selecione a Bandeira</h1></div>
+                    <div className="lineText"><h1>Preencha as informações</h1></div>
                     <div className="containerInputs">
                         <label id="nameInput">Email</label>
                         <input id ="senha"type="text" value={email} onChange={e => setEmail(e.target.value)} placeholder='Digite o e-mail'/>
