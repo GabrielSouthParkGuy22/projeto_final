@@ -1,6 +1,6 @@
-const root_container = document.querySelector("#root");
+// const root_container = document.querySelector("#root");
 
-function Header() {
+export function Header() {
   return (
     <header id="header">
       <a href="#">
@@ -10,7 +10,7 @@ function Header() {
   );
 }
 
-function RegisterHeader() {
+export function RegisterHeader() {
   return (
     <div id="registerHeader">
       <h1 id="registerTitle">Cadastro</h1>
@@ -18,7 +18,7 @@ function RegisterHeader() {
   );
 }
 
-function UserForm() {
+export function UserForm() {
   return (
     <form action="" id="user-form">
       <div id="userDataContainer">
@@ -111,7 +111,7 @@ function UserForm() {
   );
 }
 
-function Footer() {
+export function Footer() {
   return (
     <footer>
       <div id="newsletter">
@@ -136,12 +136,12 @@ function Footer() {
   );
 }
 
-ReactDOM.render(
-  <div>
-    <Header />
-    <RegisterHeader />
-    <UserForm />
-    <Footer />
-  </div>,
-  root_container
-);
+// ReactDOM.render(
+//   <div>
+//     <Header />
+//     <RegisterHeader />
+//     <UserForm />
+//     <Footer />
+//   </div>,
+//   root_container
+// );
