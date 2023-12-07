@@ -1,13 +1,12 @@
 import "./payment.css";
-import Header from "../../../my_project/src/components_pro/header.js";
-import Toggler from "../../../my_project/src/components_pro/toggler.js";
+import Header from "../components/header/header.js";
+import Toggler from "../components/toggler/toggler.js";
 import down_arrow from "../imgs/down-arrow.svg";
 import visa from "./imgs_creditCards/visa.png";
 import american from "./imgs_creditCards/american.svg";
 import elo from "./imgs_creditCards/elo.png";
 import mastercard from "./imgs_creditCards/mastercard.png";
 import Rodape from "../components/rodape/index.js";
-//262835 bg color
 
 export default function Payment() {
   return (
@@ -20,12 +19,12 @@ export default function Payment() {
           <li>2. Inserir Dados</li>
           <li>3. Confirmação do Pedido</li>
         </ol>
-        <section aria-label="payment method" id="payment-methods">
+        <form aria-label="payment method" id="payment-methods">
           <div id="payment-title">
             <h1>Opções de Entrega e Pagamento</h1>
           </div>
 
-          <form id="payment-options">
+          <div id="payment-options">
             <div id="address">
               <span className="info-span" aria-label="adress information">
                 Endereço de Entrega
@@ -137,9 +136,9 @@ export default function Payment() {
                 <input type="text" id="discount-input" name="discount-input" />
               </div>
             </div>
-          </form>
+          </div>
           <button id="form-btn">CONFIRMAR</button>
-        </section>
+        </form>
       </div>
       <Rodape />
     </>
