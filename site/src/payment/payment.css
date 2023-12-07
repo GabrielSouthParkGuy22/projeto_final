@@ -1,0 +1,140 @@
+#payment-container {
+  background-color: #404258;
+}
+
+#check-box-payment {
+  background-color: #262835;
+  padding: 2rem;
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+
+#check-box-payment li {
+  flex: 1;
+  background-color: #efb8f0;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-radius: 0.35rem;
+}
+
+#check-box-payment li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#check-box-payment li:first-child {
+  background-color: #b6c79c;
+}
+
+#check-box-payment li + li::before {
+  content: "";
+  display: block;
+  background-image: url(../imgs/small_arrow.svg);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 40px;
+  position: absolute;
+  left: -34px;
+}
+
+#payment-methods {
+  padding: 2rem;
+}
+
+#payment-title {
+  background-color: #262835;
+  border-radius: 0.35rem 0.35rem 0rem 0rem;
+  padding: 2rem;
+}
+
+#payment-title h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+#payment-options {
+  background-color: #1f202b;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+}
+
+.info-span {
+  color: #ffffff;
+  font-size: 1.25rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#credit-card {
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 0.35rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  width: 100%;
+  background-color: #404258;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+#prices h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+#prices ul {
+  list-style: none;
+  margin-left: 1rem;
+}
+
+#prices ul li {
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+#prices ul li + li {
+  line-height: 1.525rem;
+}
+
+.total-price-plus-shipping {
+  display: block;
+  color: #ffffff;
+}
+
+.split-bar {
+  margin-block: 1rem;
+  border-radius: 0.5rem;
+  height: 4px;
+  background-color: #ffffff;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  #check-box-payment {
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  #check-box-payment li + li::before {
+    display: none;
+  }
+}
+
+@media (max-width: 604px) {
+  #check-box-payment {
+    flex-direction: column;
+  }
+}
