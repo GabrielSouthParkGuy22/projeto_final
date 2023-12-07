@@ -1,55 +1,79 @@
 .newslatter {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  background-color: #69266a;
+  padding: 2rem;
 
-    padding: 20px;
-    height: 10rem;
-    background-color: #69266A;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
 }
 
 label {
-    font-weight: bold;
-    color: white;
-    font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 2rem;
 }
 
 .containerInputButton {
-    display: flex;
-    flex-direction: row;
-
-    justify-content: center;
-    align-items: center;
-
-   
-    width: 30%;
-    height: 4rem;
+  display: flex;
 }
 
-button,input {
-    height: 75%;
-    cursor: pointer;
-    font-size: 0.8rem;
+.containerInputButton input,
+.containerInputButton button {
+  border: none;
+  outline: none;
+  display: block;
+  font-size: 1.2rem;
+  padding: 0.5rem;
 }
 
-#buttonInscreva {
-    background-color: #190027;
-    color:white;
-    width: 6rem;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+.containerInputButton input {
+  background-color: #efb8f0;
+  color: #34095f;
+  border-radius: 0.35rem 0rem 0rem 0.35rem;
 }
 
-#inputEmail {
-    cursor: text;
-    background-color: #EFB8F0;
-    color: 34095F;
-    width: 15rem;
-    text-align: center;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+.containerInputButton button {
+  background-color: #190027;
+  color: #ffffff;
+  border-radius: 0rem 0.35rem 0.35rem 0rem;
 }
 
+/**/
+@media (max-width: 1024px) {
+  label {
+    font-size: 1.5rem;
+  }
+}
+/**/
 
+@media (max-width: 700px) {
+  .newslatter {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
 
-  
+@media (max-width: 425px) {
+  .containerInputButton input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  label {
+    font-size: 1.2rem;
+  }
+
+  .containerInputButton {
+    flex-direction: column;
+  }
+
+  .containerInputButton input {
+    border-radius: 0rem;
+  }
+
+  .containerInputButton button {
+    border-radius: 0rem;
+  }
+}
