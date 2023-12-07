@@ -12,3 +12,13 @@ export async function inserirDados(info) {
     return call
 }
 
+export async function visualizarUsuarios() {
+    const comando = `
+        SELECT * FROM TB_USUARIO
+    `
+
+    const [call] = await con.query(comando, [])
+
+    return call
+}
+
