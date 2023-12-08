@@ -8,13 +8,15 @@ export default function Header() {
   const [display, openAndClose] = useState("none");
 
   function navbarToggler() {
-    if (document.querySelector("#toggler-container").style.display === "none") {
+    if (
+      document.querySelector("#toggler-container").style.display === "block"
+    ) {
       openAndClose(() => {
-        document.querySelector("#toggler-container").style.display = "block";
+        document.querySelector("#toggler-container").style.display = "none";
       });
     } else {
       openAndClose(() => {
-        document.querySelector("#toggler-container").style.display = "none";
+        document.querySelector("#toggler-container").style.display = "block";
       });
     }
   }

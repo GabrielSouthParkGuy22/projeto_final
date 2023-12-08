@@ -69,3 +69,9 @@
     display: block;
   }
 }
+
+@media (max-width: 375px) {
+  .logo-container img {
+    width: 150px;
+  }
+}
